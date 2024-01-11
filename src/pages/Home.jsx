@@ -68,7 +68,7 @@ export const Home = () => {
   
             <Link to="/editor" onClick={() => handleLinkClick("/editor")} className='btn btn-primary rounded-pill btn-text drop-in-2'>EDITOR</Link>
           </div>
-          <div className='col-md-6 d-flex justify-content-center'>
+          <div className='pokemon-card-container col-md-6 d-flex justify-content-center'>
             <PokemonCard pokemon={pokemon} />
           </div>
         </div>

@@ -41,3 +41,28 @@
     transform: translate(0px);
   }
 }
+
+@keyframes drop-in-card {
+  from {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+.pokemon-card-container {
+  animation: drop-in-card 2400ms ease-out backwards, fadeIn 2400ms ease-out backwards;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
