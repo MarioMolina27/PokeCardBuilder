@@ -1,0 +1,36 @@
+.items{
+    height: 68%;
+}
+
+.title-option{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+}
+
+.btn-text-editor{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--text);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--text);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 0px;
+}
+
+.move-left {
+    transform: translateX(-25%);
+}
+
+.move-right {
+    transform: translateX(25%);
+}
+
+.move-element{
+    transition: transform 0.5s ease-in;
+}
+
+

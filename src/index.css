@@ -1,0 +1,17 @@
+:root{
+  --primary-color: #212529;
+  --secondary-color: #343A40;
+  --text: #E9ECEF;
+  --secondary-text: #CED4DA;
+  --important: #F34213;
+}
+
+body{
+  background-color: var(--primary-color);
+  color: var(--text);
+
+}
+html, body, #root {
+  height: 100%;
+  overflow-x: hidden;
+}

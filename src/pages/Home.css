@@ -1,0 +1,43 @@
+.text-home {
+  margin: 0px;
+  padding: 3px;
+  color: var(--secondary-text);
+  font-family: "Open Sans", sans-serif;
+}
+
+.title-home {
+  margin: 0px;
+  padding: 3px;
+  color: var(--text);
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+}
+
+.btn-text {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  padding: 10px 100px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.drop-in {
+  animation: drop-in 1s ease 200ms backwards;
+}
+
+.drop-in-2 {
+  animation: drop-in 1200ms ease 500ms backwards;
+}
+
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
