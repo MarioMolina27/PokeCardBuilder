@@ -1,5 +1,5 @@
 .items{
-    height: 68%;
+    height: 69%;
 }
 
 .title-option{
@@ -33,10 +33,9 @@
     transition: transform 0.5s ease-in;
 }
 
-@media screen and (max-height: 1296px) {
-    .items{
-        height: 83%;
+@media screen and (min-height: 1296px) {
+    .items {
+        height: 80%;
     }
 }
-
 
