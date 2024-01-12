@@ -1,10 +1,10 @@
 .items{
     height: 69%;
 }
-
 .options{
     height: 69%;
 }
+
 
 .title-option{
     font-family: 'Cabin', sans-serif;
@@ -37,13 +37,6 @@
     transition: transform 0.5s ease-in;
 }
 
-
-
-@media screen and (max-height: 991px) {
-    .options{
-        height: auto;
-    }
-}
 
 @media screen and (max-height: 738px) {
     .items {
