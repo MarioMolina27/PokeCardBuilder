@@ -15,18 +15,18 @@ export function MovesForm({ setFormOption, move }) {
   const handleInputChange = (fieldName, moveIndex, value) => {
     if (fieldName === 'damage' && value.length > 3) return
     setPokemon((prevPokemon) => {
-      const updatedPokemon = { ...prevPokemon };
-      const updatedMoves = [...updatedPokemon.pokemonMoves];
+      const updatedPokemon = { ...prevPokemon }
+      const updatedMoves = [...updatedPokemon.pokemonMoves]
   
       
       updatedMoves[moveIndex] = {
         ...updatedMoves[moveIndex],
         [fieldName]: value,
-      };
+      }
       updatedPokemon.pokemonMoves = updatedMoves;
       return updatedPokemon;  
-    });
-  };
+    })
+  }
 
 
   return (
@@ -58,7 +58,7 @@ export function MovesForm({ setFormOption, move }) {
           <input
             type="number"
             className="form-control m-0"
-            id="move1Name"
+            id="move1Damage"
             value={pokemonMoves[0].damage}
             onChange={(e) => handleInputChange('damage', 0, e.target.value)}
           />
