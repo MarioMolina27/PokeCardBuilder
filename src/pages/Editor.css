@@ -37,15 +37,29 @@
     transition: transform 0.5s ease-in;
 }
 
-@media screen and (max-height: 738px) {
-    .items {
-        height: 80%;
+
+
+@media screen and (max-height: 991px) {
+    .options{
+        height: auto;
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-height: 738px) {
+    .items {
+        height: 90%;
+    }
     .options{
-        height: auto;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .items {
+        height: auto
+    }
+    .options{
+        height: auto
     }
 }
 

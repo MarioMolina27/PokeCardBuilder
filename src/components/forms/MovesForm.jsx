@@ -71,7 +71,7 @@ export function MovesForm({ setFormOption, move }) {
             type="text"
             className="form-control m-0"
             id="move1Effect"
-            maxLength={40}
+            maxLength={35}
             value={pokemonMoves[0].effect}
             onChange={(e) => handleInputChange('effect', 0, e.target.value)}
           />
@@ -80,47 +80,47 @@ export function MovesForm({ setFormOption, move }) {
 
       <div className="row mt-2">
         <div className="col-1">
-            <img src="img/normal-type.png" alt="" height={40} />
+            <img src="img/normal-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/fire-type.png" alt="" height={40} />
+            <img src="img/fire-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/water-type.png" alt="" height={40} />
+            <img src="img/water-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/grass-type.png" alt="" height={40} />
+            <img src="img/grass-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/electric-type.png" alt="" height={40} />
+            <img src="img/electric-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/psychic-type.png" alt="" height={40} />
+            <img src="img/psychic-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/fighting-type.png" alt="" height={40} />
+            <img src="img/fighting-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/dark-type.png" alt="" height={40} />
+            <img src="img/dark-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/fairy-type.png" alt="" height={40} />
+            <img src="img/fairy-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/steel-type.png" alt="" height={40} />
+            <img src="img/steel-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/dragon-type.png" alt="" height={40} />
+            <img src="img/dragon-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
       </div>
@@ -155,7 +155,7 @@ export function MovesForm({ setFormOption, move }) {
             type="text"
             className="form-control m-0"
             id="move2Effect"
-            maxLength={40}
+            maxLength={35}
             value={pokemonMoves[1].effect}
             onChange={(e) => handleInputChange('effect', 1, e.target.value)}
           />
@@ -164,47 +164,47 @@ export function MovesForm({ setFormOption, move }) {
 
       <div className="row mt-2">
         <div className="col-1">
-            <img src="img/normal-type.png" alt="" height={40} />
+            <img src="img/normal-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/fire-type.png" alt="" height={40} />
+            <img src="img/fire-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/water-type.png" alt="" height={40} />
+            <img src="img/water-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/grass-type.png" alt="" height={40} />
+            <img src="img/grass-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/electric-type.png" alt="" height={40} />
+            <img src="img/electric-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/psychic-type.png" alt="" height={40} />
+            <img src="img/psychic-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/fighting-type.png" alt="" height={40} />
+            <img src="img/fighting-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/dark-type.png" alt="" height={40} />
+            <img src="img/dark-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/fairy-type.png" alt="" height={40} />
+            <img src="img/fairy-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/steel-type.png" alt="" height={40} />
+            <img src="img/steel-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
         <div className="col-1">
-            <img src="img/dragon-type.png" alt="" height={40} />
+            <img src="img/dragon-type.png" alt="" height={35} />
             <p>x1</p>
         </div>
       </div>
