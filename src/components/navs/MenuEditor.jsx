@@ -8,7 +8,7 @@ export function MenuEditor({ setFormOption })
   }
   
     return (
-        <div className='col-lg-1 d-flex flex-column align-items-center items'>
+        <div className='col-lg-1 d-flex flex-column align-items-center options'>
           <ul className='menu-editor mb-0'>
             <li className='d-flex flex-column align-items-center' style={{cursor: 'pointer'}} onClick={() => handleFormOptionChange('header')} >
               <img src="img/header-img.png" alt="" height={40} />

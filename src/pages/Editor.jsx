@@ -9,6 +9,7 @@ import { useNavbar } from '../hooks/useNavbar.js';
 import { ImageForm } from '../components/forms/ImageForm.jsx';
 import { FooterForm } from '../components/forms/FooterForm.jsx';
 import { WeakForm } from '../components/forms/WeakForm.jsx';
+import { MovesForm } from '../components/forms/MovesForm.jsx';
 
 
 
@@ -75,8 +76,8 @@ const Editor = () => {
             return <FooterForm setFormOption={handleFormOptionChange} move = {move} />
           case 'weak':
             return <WeakForm setFormOption={handleFormOptionChange} move = {move} />
-          case 'no-one':
-            return null
+          case 'moves':
+            return <MovesForm setFormOption={handleFormOptionChange} move = {move} />
           default:
             return null
         }

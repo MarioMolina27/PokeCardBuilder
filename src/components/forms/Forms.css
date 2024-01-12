@@ -33,5 +33,17 @@
 
   .moving-forms {
     opacity: 0;
-    transition: opacity 0.2s ease; /* Puedes ajustar la duración y la función de temporización según tus preferencias */
+    transition: opacity 0.2s ease; 
   }
+
+  @media screen and (max-width: 991px) {
+    .menu-option{
+        margin-left: 0px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .items{
+        height: auto;
+    }
+}

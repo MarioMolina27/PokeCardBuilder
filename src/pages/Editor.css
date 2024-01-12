@@ -2,6 +2,10 @@
     height: 69%;
 }
 
+.options{
+    height: 69%;
+}
+
 .title-option{
     font-family: 'Cabin', sans-serif;
     font-weight: 700;
@@ -22,11 +26,11 @@
 }
 
 .move-left {
-    transform: translateX(-25%);
+    transform: translateX(-30%);
 }
 
 .move-right {
-    transform: translateX(25%);
+    transform: translateX(30%);
 }
 
 .move-element{
@@ -36,6 +40,12 @@
 @media screen and (max-height: 738px) {
     .items {
         height: 80%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .options{
+        height: auto;
     }
 }
 

@@ -25,7 +25,7 @@ export function WeakForm({ setFormOption, move }) {
   const { type: typeResistance,  multiplier: multiplierResistance } = pokemonResistance;
 
   return (
-    <div className={`menu-option col-lg-6 d-flex flex-column items fade-in form-container ${move === 'right' ? 'moving-forms' : ''}`}>
+    <div className={`menu-option col-lg-7 d-flex flex-column items fade-in form-container ${move === 'right' ? 'moving-forms' : ''}`}>
       <div className=' mb-3 d-flex justify-content-between'>
         <h2 className="title-option display-5">Weakness and Resistances</h2>
         <img className="close-icon" src="img/close.svg" height={50} onClick={() => handleFormOptionChange('no-one')}></img>
