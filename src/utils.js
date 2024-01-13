@@ -3,7 +3,7 @@ export function getHexColor(type) {
 
     switch (type) {
         case "normal":
-            return "#CFCFCF";
+            return "#E7E0E0";
         case "water":
             return "#65b9e3";
         case "fire":
@@ -12,32 +12,18 @@ export function getHexColor(type) {
             return "#78c850";
         case "electric":
             return "#f7d02c";
-        case "ice":
-            return "#96d9d6";
         case "fighting":
             return "#d56723";
-        case "poison":
-            return "#a040a0";
-        case "ground":
-            return "#e0c068";
-        case "flying":
-            return "#a890f0";
         case "psychic":
-            return "#f85888";
-        case "bug":
-            return "#a8b820";
-        case "rock":
-            return "#b8a038";
-        case "ghost":
-            return "#705898";
+            return "#A755BC";
         case "steel":
-            return "#b8b8d0";
+            return "#bdc7c8";
         case "dragon":
-            return "#7038f8";
+            return "#cba528";
         case "dark":
-            return "#705848";
+            return "#005761";
         case "fairy":
-            return "#ee99ac";
+            return "#c93f7c";
         default:
             return "#000000";
     }
