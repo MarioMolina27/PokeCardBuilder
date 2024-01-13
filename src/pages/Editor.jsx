@@ -1,6 +1,5 @@
 import './Editor.css';
-import html2canvas from 'html2canvas';
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect } from 'react';
 import { PokemonCard } from '../components/card/PokemonCard.jsx';
 import { MenuEditor } from '../components/navs/MenuEditor.jsx';
 import { HeaderForm } from '../components/forms/HeaderForm.jsx';
@@ -10,62 +9,24 @@ import { ImageForm } from '../components/forms/ImageForm.jsx';
 import { FooterForm } from '../components/forms/FooterForm.jsx';
 import { WeakForm } from '../components/forms/WeakForm.jsx';
 import { MovesForm } from '../components/forms/MovesForm.jsx';
+import { useDownloadImage } from '../hooks/useDownloadImage.js';
+import { useFormsNavigation } from '../hooks/useFormsNavigation.js';
 
 
 
 const Editor = () => {
     
-    const {setActiveLink} = useNavbar()
-    const [formOption, setFormOption] = useState('no-one')
-    const [move, setMove] = useState('') //state for moving animation
+    const {setActiveLink} = useNavbar()//state for moving animation
+    const pokemonCardRef = useRef(null)
+    const {pokemon} = usePokemon()
+    const handleDownloadImage = useDownloadImage(pokemonCardRef);
+    const { formOption, move, handleFormOptionChange } = useFormsNavigation();
   
-
     useEffect(() => {
         setActiveLink('/editor');
     }, []);
 
-    const handleFormOptionChange = (newFormOption) => {
-      if(newFormOption !== 'no-one' && formOption === 'no-one'){
-        setMove('left')
-        setTimeout(() => {
-          setMove('')
-          setFormOption(newFormOption)
-        }, 500)
-      }
-      else if(newFormOption === 'no-one' && formOption !== 'no-one'){
-        setMove('right')
-        setTimeout(() => {
-          setMove('')
-          setFormOption(newFormOption)
-        }, 500)
-      }
-      else {
-        setFormOption(newFormOption)
-      }
-    };
     
-    const pokemonCardRef = useRef(null)
-    const {pokemon} = usePokemon()
-
-    const handleDownloadImage = async () => {
-        const element = pokemonCardRef.current
-        const canvas = await html2canvas(element)
-    
-        const data = canvas.toDataURL('image/jpg')
-        const link = document.createElement('a')
-  
-        if (typeof link.download === 'string') {
-          link.href = data
-          link.download = 'image.jpg'
-    
-          document.body.appendChild(link)
-          link.click()
-          document.body.removeChild(link)
-        } else {
-          window.open(data)
-        }
-    };
-
     const renderForms = () => {
         switch (formOption) {
           case 'header':
