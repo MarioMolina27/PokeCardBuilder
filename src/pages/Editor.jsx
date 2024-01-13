@@ -1,4 +1,5 @@
 import './Editor.css';
+import './Forms.css'
 import { useRef, useEffect } from 'react';
 import { PokemonCard } from '../components/card/PokemonCard.jsx';
 import { MenuEditor } from '../components/navs/MenuEditor.jsx';

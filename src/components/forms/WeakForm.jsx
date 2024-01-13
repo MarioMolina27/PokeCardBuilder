@@ -1,5 +1,4 @@
 import { usePokemon } from "../../hooks/usePokemon.js";
-import './Forms.css';
 import { ALL_TYPES } from "../../constants.js";
 import PropTypes from 'prop-types'
 
@@ -11,8 +10,8 @@ export function WeakForm({ setFormOption, move }) {
     setFormOption(newOption)
   }
 
-  const handleInputChange = (fieldName, value) => {
-
+  const handleInputChange = (fieldName, value, formName) => {
+    if (formName === 'multiplier' && value.multiplier.length > 1) return
     setPokemon({
         ...pokemon,
         [fieldName]: value,
@@ -55,7 +54,7 @@ export function WeakForm({ setFormOption, move }) {
                 maxLength={9}
                 placeholder="+0"
                 value={multiplierWeakness}
-                onChange={(e) => handleInputChange('pokemonWeakness', { ...pokemonWeakness, multiplier: e.target.value })}
+                onChange={(e) => handleInputChange('pokemonWeakness', { ...pokemonWeakness, multiplier: e.target.value },'multiplier')}
             />
         </div>
       </div>
@@ -84,7 +83,8 @@ export function WeakForm({ setFormOption, move }) {
                 maxLength={9}
                 placeholder="+0"
                 value={multiplierResistance}
-                onChange={(e) => handleInputChange('pokemonResistance', { ...pokemonResistance, multiplier: e.target.value })}
+                max={9}
+                onChange={(e) => handleInputChange('pokemonResistance', { ...pokemonResistance, multiplier: e.target.value },'multiplier')}
             />
         </div>
       </div>
@@ -96,11 +96,11 @@ export function WeakForm({ setFormOption, move }) {
                     className="form-select"
                     value={pokemonRetreat}
                     onChange={(e) => handleInputChange('pokemonRetreat', e.target.value )}>
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option> 
-                    <option value="3">3</option> 
-                    <option value="4">4</option> 
+                    <option value={0}>0</option>
+                    <option value={1}>1</option>
+                    <option value={2}>2</option> 
+                    <option value={3}>3</option> 
+                    <option value={4}>4</option> 
                 </select>
             </div>
         </div>

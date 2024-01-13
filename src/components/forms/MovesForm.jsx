@@ -1,4 +1,3 @@
-import './Forms.css'
 import PropTypes from 'prop-types'
 import { usePokemon } from "../../hooks/usePokemon"
 import { TypeSelector } from './formsComponents/TypeSelector'

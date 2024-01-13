@@ -1,5 +1,4 @@
 import { usePokemon } from "../../hooks/usePokemon"
-import './Forms.css'
 import PropTypes from 'prop-types'
 
 export function FooterForm({ setFormOption, move }) {

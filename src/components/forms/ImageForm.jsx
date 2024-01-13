@@ -1,5 +1,4 @@
 import { usePokemon } from "../../hooks/usePokemon"
-import './Forms.css'
 import PropTypes from 'prop-types'
 
 export function ImageForm({ setFormOption, move }) {
@@ -12,8 +11,11 @@ export function ImageForm({ setFormOption, move }) {
     setFormOption(newOption)
   };
 
-  const handleInputChange = (fieldName, value) => {
+  const handleInputChange = (fieldName, value, formName) => {
     if (fieldName === 'pokemonNum'&& value.length > 4) return
+    if (formName === 'height' && value.height.length > 5) return
+    if (formName === 'weight' && value.weight.length > 5) return
+
 
     if (fieldName === 'pokemonImage') {
       const fileReader = new FileReader()
@@ -94,7 +96,7 @@ export function ImageForm({ setFormOption, move }) {
             className="form-control m-0"
             id="pokemonHeight"
             value={height}
-            onChange={(e) => handleInputChange('pokemonInfo', { ...pokemonInfo, height: e.target.value })}
+            onChange={(e) => handleInputChange('pokemonInfo', { ...pokemonInfo, height: e.target.value }, 'height')}
           />
         </div>
         <div className="col-6">
@@ -106,7 +108,7 @@ export function ImageForm({ setFormOption, move }) {
             className="form-control m-0"
             id="pokemonWeight"
             value={weight}
-            onChange={(e) => handleInputChange('pokemonInfo', { ...pokemonInfo, weight: e.target.value })}
+            onChange={(e) => handleInputChange('pokemonInfo', { ...pokemonInfo, weight: e.target.value }, 'weight')}
           />
         </div>
       </div>

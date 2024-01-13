@@ -1,13 +1,11 @@
 import { usePokemon } from "../../hooks/usePokemon.js";
-import './Forms.css';
 import { ALL_TYPES } from "../../constants.js";
-import { useState } from "react";
 import PropTypes from 'prop-types'
 
 
 export function HeaderForm({ setFormOption, move }) {
   const { pokemon, setPokemon } = usePokemon()
-  const [showEvolution, setShowEvolution] = useState(false)
+  const { pokemonName, type, pokemonHp, stage, preevolution } = pokemon;
 
   const handleFormOptionChange = (newOption) => {
     setFormOption(newOption)
@@ -15,12 +13,7 @@ export function HeaderForm({ setFormOption, move }) {
 
   const handleInputChange = (fieldName, value) => {
     if (fieldName === 'pokemonHp' && value.length > 3) return
-    
-    if(fieldName === 'stage') 
-    {
-      if(value === 'STAGE 1' || value === 'STAGE 2') setShowEvolution(true); else setShowEvolution(false)
-    }
-
+  
     if (fieldName === 'preevolutionImage' && value && value.preImage) {
       const fileReader = new FileReader()
       fileReader.onloadend = () => {
@@ -40,8 +33,6 @@ export function HeaderForm({ setFormOption, move }) {
       })
     }
   }
-
-  const { pokemonName, type, pokemonHp, stage, preevolution } = pokemon;
 
   return (
     <div className={`menu-option col-lg-7 d-flex flex-column items fade-in form-container ${move === 'right' ? 'moving-forms' : ''}`}>
@@ -108,7 +99,7 @@ export function HeaderForm({ setFormOption, move }) {
         </div>
       </div>
 
-      {showEvolution && (
+      {stage !== 'BASIC' && (
         <div className='row mt-4'>
           <div className="col-md-6">
             <label htmlFor="image-preevolution" className="form-label m-0">Image</label>
