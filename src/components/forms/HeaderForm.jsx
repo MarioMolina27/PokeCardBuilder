@@ -15,6 +15,7 @@ export function HeaderForm({ setFormOption, move }) {
 
   const handleInputChange = (fieldName, value) => {
     if (fieldName === 'pokemonHp' && value.length > 3) return
+    
     if(fieldName === 'stage') 
     {
       if(value === 'STAGE 1' || value === 'STAGE 2') setShowEvolution(true); else setShowEvolution(false)

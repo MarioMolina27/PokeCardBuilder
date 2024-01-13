@@ -10,7 +10,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="navbar w-100 pt-4 d-flex mb-5 justify-content-end">
+        <nav className="navbar w-100 pt-4 d-flex mb-2 justify-content-end">
            <div className="nav-container me-4"> 
                 <Link
                     to="/"

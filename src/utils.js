@@ -42,3 +42,14 @@ export function getHexColor(type) {
             return "#000000";
     }
 }
+
+export function countOccurrences(array, word) {
+    const count = array.reduce((accumulator, element) => {
+        if (element === word) {
+            return accumulator + 1;
+        }
+        return accumulator;
+    }, 0);
+
+    return count;
+}

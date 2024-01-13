@@ -1,6 +1,7 @@
 import './Forms.css'
 import PropTypes from 'prop-types'
 import { usePokemon } from "../../hooks/usePokemon"
+import { TypeSelector } from './formsComponents/TypeSelector'
 
 export function MovesForm({ setFormOption, move }) {
  
@@ -78,52 +79,8 @@ export function MovesForm({ setFormOption, move }) {
         </div>
       </div>
 
-      <div className="row mt-2">
-        <div className="col-1">
-            <img src="img/normal-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/fire-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/water-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/grass-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/electric-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/psychic-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/fighting-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/dark-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/fairy-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/steel-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/dragon-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-      </div>
+      <TypeSelector numMove={0} />
+      
 
       <div className="row mt-3">
         <div className='col-6'>
@@ -161,53 +118,8 @@ export function MovesForm({ setFormOption, move }) {
           />
         </div>
       </div>
+      <TypeSelector numMove={1} />
 
-      <div className="row mt-2">
-        <div className="col-1">
-            <img src="img/normal-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/fire-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/water-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/grass-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/electric-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/psychic-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/fighting-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/dark-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/fairy-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/steel-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-        <div className="col-1">
-            <img src="img/dragon-type.png" alt="" height={35} />
-            <p>x1</p>
-        </div>
-      </div>
 
     </div>
   );

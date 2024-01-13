@@ -21,7 +21,7 @@
     background-color: var(--text);
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 997px) {
     .menu-editor{
         width: 100%;
         flex-direction: row;
