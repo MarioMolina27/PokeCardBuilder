@@ -1,8 +1,23 @@
-# React + Vite
+# PokeCardBuilder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PokeCardBuilder is my first React application that allows you to create custom Pokémon cards and download them as images. It uses technologies such as Bootstrap, html2canvas, React, and React Router to provide an intuitive and engaging user experience.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Responsive Design with Bootstrap:** The application easily adapts to different screen sizes, providing a consistent user experience on both mobile and desktop devices.
+
+- **Custom Card Editor:** Create unique Pokémon cards with customized information such as name, type, image, and statistics.
+
+- **Download Cards as Image:** With a single click, download your custom cards as images to share on social media or save as keepsakes.
+
+- **Smooth Navigation with React Router:** Explore the application easily and efficiently with the help of React Router, managing navigation between different sections of the application.
+
+
+
+## Technologies
+- React
+- React Router
+- Bootstrap
+- html2canvas
+- Vite
