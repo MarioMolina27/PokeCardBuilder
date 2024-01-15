@@ -1,0 +1,6 @@
+.resistance-container
+{
+    margin-right: 0px;
+    display: flex;    
+    flex-direction: row;
+}

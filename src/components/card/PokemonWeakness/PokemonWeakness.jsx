@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './PokemonWeakness.css';
 
 export function PokemonWeakness({ weakness }) {
     return (

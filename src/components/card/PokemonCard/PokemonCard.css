@@ -178,44 +178,6 @@
 {
     margin: 2px;
 }
-
-/************************************************* MOVEMENTS SECTION ******************************************************************************/
-.movements-section 
-{
-    margin-top: 20px;
-}
-.movements-section p 
-{
-    margin:0px;
-}
-
-.move 
-{
-    display: grid;
-    grid-template-columns: 83.33px 126.63px auto; 
-    align-items: center; 
-    margin-top: 20px;
-}
-.type-move-img
-{
-    height: 19px;
-}
-
-.movement-damage 
-{
-    align-items: center;
-    justify-self: end;
-    font-weight: bold; 
-}
-.move-description
-{
-    font-family: 'Futura-Medium';
-    font-size: 8px;
-    margin: 0px;
-    width: 250px;
-    height: 25px;
-}
-
 /************************************************* WEAKNESS SECTION ******************************************************************************/
 .weak-retreat-section
 {
@@ -234,13 +196,8 @@
     margin-left: -12px;
     width: 160px;
 }
-.weak-container
-{
-    display: flex;
-    flex-direction: row;
-}
 
-.weak-and-resistance-container p , .retreat-container p
+.weak-and-resistance-container p
 {
     font-size: 8px;
     margin: 0px;
@@ -252,27 +209,9 @@
     align-self: center;
 }
 
-.weakness-text, .x-damage
+.x-damage
 {
     margin-right: 5px;
-}
-
-.resistance-container
-{
-    margin-right: 0px;
-    display: flex;    
-    flex-direction: row;
-}
-
-.retreat-container
-{
-    display: flex;
-    flex-direction: row;
-    border: 1px solid #ccc;
-    background: linear-gradient(to left, #e1e1e1, #ffffff, #e1e1e1);
-    border-radius: 6px;
-    width: 100px;
-    margin-right: -12px;
 }
 
 .type-img-mini,.rarerty-simbols-img 

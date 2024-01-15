@@ -1,0 +1,10 @@
+.weak-container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.weakness-text
+{
+    margin-right: 5px;
+}

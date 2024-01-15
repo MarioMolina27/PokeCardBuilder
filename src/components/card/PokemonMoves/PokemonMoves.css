@@ -1,0 +1,33 @@
+/************************************************* MOVEMENTS SECTION ******************************************************************************/
+.movements-section 
+{
+    margin-top: 20px;
+}
+.movements-section p 
+{
+    margin:0px;
+}
+
+.move 
+{
+    display: grid;
+    grid-template-columns: 83.33px 126.63px auto; 
+    align-items: center; 
+    margin-top: 20px;
+}
+
+
+.movement-damage 
+{
+    align-items: center;
+    justify-self: end;
+    font-weight: bold; 
+}
+.move-description
+{
+    font-family: 'Futura-Medium';
+    font-size: 8px;
+    margin: 0px;
+    width: 250px;
+    height: 25px;
+}

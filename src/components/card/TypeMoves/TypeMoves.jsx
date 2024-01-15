@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './TypeMoves.css';
 
 export const TypeMoves = ({ typeMoves }) => {
     return (

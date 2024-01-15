@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './PokemonResistance.css';
 
 export function PokemonResistance({ resistance }) {
 

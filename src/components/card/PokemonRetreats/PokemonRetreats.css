@@ -1,0 +1,16 @@
+.retreat-container
+{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    background: linear-gradient(to left, #e1e1e1, #ffffff, #e1e1e1);
+    border-radius: 6px;
+    width: 100px;
+    margin-right: -12px;
+}
+
+.retreat-container p{
+    font-size: 8px;
+    margin: 0px;
+    padding: 3px;
+}

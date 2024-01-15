@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { TypeMoves } from '../TypeMoves/TypeMoves';
+import './PokemonMoves.css';
 
 export function PokemonMoves({ pokemonMoves }) {
     return (
