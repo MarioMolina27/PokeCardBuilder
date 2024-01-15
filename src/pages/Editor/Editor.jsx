@@ -1,17 +1,17 @@
 import './Editor.css';
 import './Forms.css'
 import { useRef, useEffect } from 'react';
-import { PokemonCard } from '../components/card/PokemonCard.jsx';
-import { MenuEditor } from '../components/navs/MenuEditor.jsx';
-import { HeaderForm } from '../components/forms/HeaderForm.jsx';
-import { usePokemon } from '../hooks/usePokemon.js';
-import { useNavbar } from '../hooks/useNavbar.js';
-import { ImageForm } from '../components/forms/ImageForm.jsx';
-import { FooterForm } from '../components/forms/FooterForm.jsx';
-import { WeakForm } from '../components/forms/WeakForm.jsx';
-import { MovesForm } from '../components/forms/MovesForm.jsx';
-import { useDownloadImage } from '../hooks/useDownloadImage.js';
-import { useFormsNavigation } from '../hooks/useFormsNavigation.js';
+import { PokemonCard } from '../../components/card/PokemonCard/PokemonCard.jsx';
+import { MenuEditor } from '../../components/navs/MenuEditor/MenuEditor.jsx';
+import { HeaderForm } from '../../components/forms/HeaderForm/HeaderForm.jsx';
+import { usePokemon } from '../../hooks/usePokemon.js';
+import { useNavbar } from '../../hooks/useNavbar.js';
+import { ImageForm } from '../../components/forms/ImageForm/ImageForm.jsx';
+import { FooterForm } from '../../components/forms/FooterForm/FooterForm.jsx';
+import { WeakForm } from '../../components/forms/WeakForm/WeakForm.jsx';
+import { MovesForm } from '../../components/forms/MovesForm/MovesForm.jsx';
+import { useDownloadImage } from '../../hooks/useDownloadImage.js';
+import { useFormsNavigation } from '../../hooks/useFormsNavigation.js';
 
 
 

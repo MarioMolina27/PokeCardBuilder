@@ -1,7 +1,7 @@
-import { usePokemon } from "../../../hooks/usePokemon"
+import { usePokemon } from "../../../../hooks/usePokemon.js"
 import PropTypes from 'prop-types'
 import './TypeSelector.css'
-import { countOccurrences } from "../../../utils.js"
+import { countOccurrences } from "../../../../utils.js"
 
 export function TypeSelector({ numMove }) {
     const { pokemon, setPokemon } = usePokemon()

@@ -1,12 +1,12 @@
 import { Route, Routes} from 'react-router-dom'
-import Navbar from './components/navs/Navbar.jsx'
+import Navbar from './components/navs/Navbar/Navbar.jsx'
 import { NavbarProvider } from './context/navbarContext.jsx'
 import { CardProvider } from './context/cardContext.jsx'
 import { Suspense, lazy } from 'react'
 
-const LazyHomePage = lazy(() => import('./pages/Home.jsx'))
-const LazyEditorPage = lazy(() => import('./pages/Editor.jsx'))
-const Lazy404Page = lazy(() => import('./pages/Page404.jsx'))
+const LazyHomePage = lazy(() => import('./pages/Home/Home.jsx'))
+const LazyEditorPage = lazy(() => import('./pages/Editor/Editor.jsx'))
+const Lazy404Page = lazy(() => import('./pages/404/Page404.jsx'))
 
 
 function App() {

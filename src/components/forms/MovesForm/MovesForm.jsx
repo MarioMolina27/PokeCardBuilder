@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-import { usePokemon } from "../../hooks/usePokemon"
-import { TypeSelector } from './formsComponents/TypeSelector'
+import { usePokemon } from "../../../hooks/usePokemon"
+import { TypeSelector } from '../formsComponents/TypeSelector/TypeSelector'
 
 export function MovesForm({ setFormOption, move }) {
  

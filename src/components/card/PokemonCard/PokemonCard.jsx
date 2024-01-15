@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import './PokemonCard.css'
-import { PokemonMoves } from './PokemonMoves.jsx';
-import { PokemonWeakness } from './PokemonWeakness.jsx';   
-import { PokemonRetreats } from './PokemonRetreats.jsx'; 
-import { PokemonResistance } from './PokemonResistance.jsx';
-import { getHexColor } from '../../utils.js';
+import { PokemonMoves } from '../PokemonMoves/PokemonMoves.jsx';
+import { PokemonWeakness } from '../PokemonWeakness/PokemonWeakness.jsx';   
+import { PokemonRetreats } from '../PokemonRetreats/PokemonRetreats.jsx'; 
+import { PokemonResistance } from '../PokemonResistance/PokemonResistance.jsx';
+import { getHexColor } from '../../../utils.js';
 
 
 export function PokemonCard({ pokemon }) {

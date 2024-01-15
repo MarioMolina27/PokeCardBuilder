@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import './Navbar.css';
-import {useNavbar} from '../../hooks/useNavbar.js'
+import {useNavbar} from '../../../hooks/useNavbar.js'
 
 export default function Navbar() {
     const {activeLink, setActiveLink} = useNavbar()

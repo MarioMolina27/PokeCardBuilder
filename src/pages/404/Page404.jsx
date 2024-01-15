@@ -1,5 +1,5 @@
 import "./Page404.css";
-import { useNavbar } from "../hooks/useNavbar.js";
+import { useNavbar } from "../../hooks/useNavbar.js";
 import { useEffect } from "react";
 
 const Page404 = () => {

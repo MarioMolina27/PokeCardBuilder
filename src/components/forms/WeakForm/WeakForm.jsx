@@ -1,5 +1,5 @@
-import { usePokemon } from "../../hooks/usePokemon.js";
-import { ALL_TYPES } from "../../constants.js";
+import { usePokemon } from "../../../hooks/usePokemon.js";
+import { ALL_TYPES } from "../../../constants.js";
 import PropTypes from 'prop-types'
 
 

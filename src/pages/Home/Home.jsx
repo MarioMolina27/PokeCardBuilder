@@ -1,7 +1,7 @@
-import { PokemonCard } from '../components/card/PokemonCard.jsx';
+import { PokemonCard } from '../../components/card/PokemonCard/PokemonCard.jsx';
 import './Home.css';
 import { Link } from "react-router-dom";
-import {useNavbar} from '../hooks/useNavbar.js'
+import {useNavbar} from '../../hooks/useNavbar.js'
 
 export const Home = () => {
     const {setActiveLink} = useNavbar()
