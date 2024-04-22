@@ -56,3 +56,13 @@
     }
 }
 
+@media screen and (max-width: 991px) {
+    .move-left {
+        transform: translateX(0%);
+    }
+    
+    .move-right {
+        transform: translateX(0%);
+    }
+  }
+
